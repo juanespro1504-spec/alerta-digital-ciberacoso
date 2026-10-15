@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alerta Digital | Detección y prevención del ciberacoso</title>
+<style>
+:root{--bg:#f5f7ff;--card:#fff;--ink:#1c2140;--muted:#68708c;--purple:#6546e8;--purple2:#8d7bff;--line:#e5e8f5;--red:#d9435f;--amber:#a86708;--green:#16835c}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(120deg,#31206f,#6546e8 65%,#8d7bff);color:#fff;padding:22px max(20px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:14px;background:#ffffff22;display:grid;place-items:center;font-size:23px}.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;color:#e5e0ff;font-size:12px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:white;text-decoration:none;padding:9px 12px;border-radius:10px;font-size:13px}nav a:hover{background:#ffffff20}
+main{max-width:1120px;margin:0 auto;padding:28px 20px 50px}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch;margin-bottom:22px}
+.hero-copy,.hero-art,.panel,.stat{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 28px #26205b08}
+.hero-copy{padding:30px}.eyebrow{color:var(--purple);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.1;margin:12px 0}.hero-copy p,.sub{color:var(--muted);line-height:1.65}.hero-art{padding:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(160deg,#eeebff,#fff)}
+.shield{font-size:75px;margin-bottom:10px}.hero-art strong{font-size:19px}.hero-art span{color:var(--muted);font-size:13px;line-height:1.5;margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}.stat{padding:18px}.stat small{color:var(--muted)}.stat strong{display:block;font-size:25px;margin-top:8px}
+.layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.panel{padding:24px;margin-bottom:22px}.panel h3{margin:0 0 7px;font-size:20px}.panel .sub{font-size:13px;margin:0 0 18px}
+label{display:block;font-size:13px;font-weight:700;margin:14px 0 7px}select,textarea,input{width:100%;font:inherit;border:1px solid #dce0f1;border-radius:12px;padding:12px;background:#fff;color:var(--ink)}textarea{min-height:135px;resize:vertical}
+button{border:0;border-radius:12px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer}.primary{background:var(--purple);color:#fff}.secondary{background:#f0edff;color:var(--purple)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.notice{padding:13px;border-radius:12px;background:#f6f4ff;color:#51418e;font-size:12px;line-height:1.5;margin-top:14px}
+.result{border:1px solid var(--line);border-radius:15px;padding:16px;margin-top:16px;display:none}.result.show{display:block}.result h4{margin:0 0 8px}.pill{display:inline-block;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800;margin-bottom:8px}.low{background:#e3f8ef;color:var(--green)}.medium{background:#fff1d8;color:var(--amber)}.high{background:#ffe5ea;color:var(--red)}
+ul.clean{padding-left:19px;color:var(--muted);line-height:1.8;font-size:14px}.tip{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.tip:last-child{border:0}.tip-icon{font-size:23px}.tip b{display:block;margin-bottom:4px}.tip span{font-size:13px;color:var(--muted);line-height:1.5}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:22px;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero,.layout{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero-copy{padding:23px}header{padding:18px 20px}nav{width:100%}nav a{padding:8px 9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">🛡️</div><div><h1>Alerta Digital</h1><p>Detectar · Prevenir · Acompañar</p></div></div>
+  <nav><a href="#analizador">Analizador</a><a href="#prevencion">Prevención</a><a href="#ayuda">Buscar ayuda</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Tecnología para una convivencia digital segura</div>
+      <h2>En internet, el respeto también importa.</h2>
+      <p>Una propuesta de sistema informático que ayuda a reconocer posibles señales de ciberacoso en mensajes y comentarios para promover una respuesta segura y oportuna.</p>
+      <a href="#analizador"><button class="primary">Probar el analizador ↓</button></a>
+    </div>
+    <div class="hero-art"><div class="shield">🛡️</div><strong>Tu bienestar digital importa</strong><span>La herramienta orienta; no reemplaza el criterio humano ni una denuncia formal.</span></div>
+  </section>
+  <section class="stats">
+    <div class="stat"><small>Objetivo</small><strong>Detectar señales</strong></div>
+    <div class="stat"><small>Enfoque</small><strong>Prevenir daños</strong></div>
+    <div class="stat"><small>Prioridad</small><strong>Buscar apoyo</strong></div>
+  </section>
+  <div class="layout">
+    <div>
+      <section class="panel" id="analizador">
+        <h3>Analizador de mensajes</h3>
+        <p class="sub">Pega un mensaje de ejemplo para revisar si contiene palabras que podrían indicar una situación de acoso.</p>
+        <label for="platform">¿Dónde apareció?</label>
+        <select id="platform"><option>Red social</option><option>Chat o mensajería</option><option>Videojuego en línea</option><option>Foro o comentarios</option></select>
+        <label for="message">Mensaje o comentario</label>
+        <textarea id="message" placeholder="Escribe aquí un ejemplo. No incluyas nombres reales, contraseñas ni datos privados."></textarea>
+        <div class="actions"><button class="primary" id="analyze">Analizar mensaje</button><button class="secondary" id="example">Cargar ejemplo</button><button class="secondary" id="clear">Limpiar</button></div>
+        <div class="notice">Privacidad: este prototipo analiza el texto en tu navegador y no lo envía a un servidor. Usa ejemplos ficticios y evita pegar conversaciones privadas.</div>
+        <div class="result" id="result" aria-live="polite"></div>
+      </section>
+      <section class="panel" id="prevencion">
+        <h3>Cómo prevenir el ciberacoso</h3>
+        <div class="tip"><div class="tip-icon">🔒</div><div><b>Protege tu información</b><span>Configura la privacidad de tus cuentas y evita publicar datos personales.</span></div></div>
+        <div class="tip"><div class="tip-icon">📸</div><div><b>Guarda evidencias</b><span>Si recibes amenazas o insultos, conserva capturas, fechas y enlaces, sin difundirlos públicamente.</span></div></div>
+        <div class="tip"><div class="tip-icon">🚫</div><div><b>Bloquea y reporta</b><span>Usa las herramientas de bloqueo y denuncia de la plataforma.</span></div></div>
+        <div class="tip"><div class="tip-icon">🤝</div><div><b>Busca apoyo</b><span>Habla con una persona adulta de confianza, orientación escolar o alguien que pueda ayudarte.</span></div></div>
+      </section>
+    </div>
+    <div>
+      <section class="panel">
+        <h3>¿Qué es el ciberacoso?</h3>
+        <p class="sub">Es el uso de medios digitales para hostigar, humillar, amenazar o hacer daño de forma intencional a otra persona.</p>
+        <ul class="clean"><li>Insultos repetidos o humillaciones.</li><li>Amenazas o mensajes intimidantes.</li><li>Difusión de rumores o contenido privado.</li><li>Persecución constante mediante cuentas o chats.</li></ul>
+      </section>
+      <section class="panel" id="ayuda">
+        <h3>Si estás viviendo una situación así</h3>
+        <p class="sub">No tienes que resolverlo a solas.</p>
+        <ul class="clean"><li>No respondas con más agresiones.</li><li>Guarda evidencias y bloquea la cuenta si es seguro hacerlo.</li><li>Cuéntaselo a alguien de confianza.</li><li>Si hay amenazas creíbles o peligro inmediato, busca ayuda de las autoridades o servicios de emergencia de tu zona.</li></ul>
+        <button class="secondary" id="help">Ver pasos recomendados</button>
+        <div class="result" id="helpResult"><h4>Pasos recomendados</h4><ol class="clean"><li>Aléjate un momento del chat si te sientes en riesgo.</li><li>Conserva evidencias sin compartirlas.</li><li>Bloquea y reporta el perfil.</li><li>Busca apoyo de una persona de confianza y, si hay peligro, ayuda urgente local.</li></ol></div>
+      </section>
+      <section class="panel">
+        <h3>Sobre este prototipo</h3>
+        <p class="sub">Este sitio representa una idea académica: usa una lista sencilla de términos de ejemplo para mostrar una alerta inicial. No utiliza inteligencia artificial ni puede confirmar que un mensaje sea ciberacoso.</p>
+      </section>
+    </div>
+  </div>
+</main>
+<footer>Proyecto de Ingeniería de Sistemas · Informática, Convergencia y Tecnología<br>Prototipo educativo de detección y prevención del ciberacoso</footer>
+<script>
+const terms={
+ high:["te voy a matar","te voy a golpear","te voy a encontrar","voy a publicar tus fotos","te voy a hacer daño","te voy a buscar"],
+ medium:["idiota","imbecil","estupido","estúpido","inutil","inútil","te odio","das asco","nadie te quiere","te voy a humillar","callate","cállate","perdedor","perdedora","ridiculo","ridícula"]
+};
+const result=document.getElementById('result');
+function analyze(){
+ const raw=document.getElementById('message').value.trim();
+ if(!raw){result.className='result show';result.innerHTML='<h4>Escribe un mensaje primero</h4><p>Usa un ejemplo ficticio para probar la herramienta.</p>';return}
+ const msg=raw.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ const hitHigh=terms.high.filter(t=>msg.includes(t.normalize('NFD').replace(/[\u0300-\u036f]/g,'')));
+ const hitMedium=terms.medium.filter(t=>msg.includes(t.normalize('NFD').replace(/[\u0300-\u036f]/g,'')));
+ let level='low',title='No se detectaron términos de alerta',desc='La lista básica no encontró palabras incluidas en sus ejemplos. Esto no garantiza que el mensaje sea seguro.';
+ if(hitHigh.length){level='high';title='Alerta alta: posible amenaza';desc='El texto contiene expresiones que pueden interpretarse como amenaza. Guarda evidencia y busca apoyo; si hay peligro inmediato, contacta a los servicios de emergencia locales.'}
+ else if(hitMedium.length){level='medium';title='Atención: posible lenguaje ofensivo';desc='Se encontraron expresiones potencialmente ofensivas. El contexto importa: considera reportar el mensaje y buscar apoyo si es parte de un patrón de acoso.'}
+ result.className='result show';
+ result.innerHTML='<span class="pill '+level+'">'+(level==='high'?'ALERTA ALTA':level==='medium'?'REVISAR MENSAJE':'SIN COINCIDENCIAS')+'</span><h4>'+title+'</h4><p>'+desc+'</p><p><b>Plataforma:</b> '+document.getElementById('platform').value+'</p><p><b>Coincidencias:</b> '+(hitHigh.concat(hitMedium).join(', ')||'Ninguna en la lista de ejemplo')+'</p><small>Resultado orientativo, no una decisión automática ni una prueba definitiva de ciberacoso.</small>';
+}
+document.getElementById('analyze').addEventListener('click',analyze);
+document.getElementById('example').addEventListener('click',()=>{document.getElementById('message').value='Nadie te quiere, eres un idiota y te voy a humillar.';analyze()});
+document.getElementById('clear').addEventListener('click',()=>{document.getElementById('message').value='';result.className='result';result.innerHTML=''});
+document.getElementById('help').addEventListener('click',()=>document.getElementById('helpResult').classList.toggle('show'));
+</script>
+</body>
+</html>
